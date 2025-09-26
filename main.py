@@ -31,9 +31,9 @@ async def send_code(data: EmailRequest):
     verification_codes[email] = code
 
     message = Mail(
-        from_email=("no-reply@techapppartners.com", "Do I Sound Crazy"),
+        from_email=("no-reply@techapppartners.com", "FlashCardAI"),
         to_emails=email,
-        subject="DISC Verification Code",
+        subject="FlashCardAI Verification Code",
         html_content=f"<p>Your verification code is: <strong>{code}</strong></p>"
     )
 
